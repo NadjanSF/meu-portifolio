@@ -1,21 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Nadjan</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Nadjan</title>
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonte do Google (estilo mais moderno) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ícones bonitos (do IonIcons) para redes sociais -->
+  <script type="module" src="https://unpkg.com/[email protected]/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/[email protected]/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="cyber-theme">
+<body>
 
-    <div class="container">
-        <h1>Bem-vindo ao Portfólio de Nadjan</h1>
-        <p>Desenvolvedor de Sistemas - Apaixonado por tecnologia!</p>
-
-        <button class="btn" id="linkedinBtn">Meu LinkedIn</button>
-        <a href="NadjanCV.pdf" class="btn download-btn" download>Baixar Currículo</a>
+  <!-- Menu lateral com informações pessoais -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="perfil.jpeg" alt="Minha Foto" />
+      <h1>Nadjan S Florencio</h1>
+      <p>*Especialista em Prevenção a Fraudes</p>
+      <p>*Analista de Dados jr </p>
+      <p>*Desenvolvimento de Sistemas (em curso)</p>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Links de redes sociais -->
+    <ul class="social-links">
+      <li><a href="https://github.com/NadjanSF/"><ion-icon name="logo-github"></ion-icon></a></li>
+      <li><a href="https://www.linkedin.com/in/nadjan-santos-florencio-b87453138/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+  </aside>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+
+    <!-- Navegação com links para seções -->
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#Redes">Linkedin e CV</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seção sobre mim -->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou Nadjan, profissional com sólida experiência em análise de dados e prevenção a fraudes, atualmente em transição para o desenvolvimento de sistemas.</p>
+
+<p>Estou em formação técnica pela ETEC e curso superior pela FATEC, o que me proporciona uma base teórica consistente aliada à vivência prática com tecnologias atuais. Tenho familiaridade com linguagens como Java e Portugol, além de conhecimentos em Excel, leitura de fluxogramas e técnicas de documentoscopia aplicadas à segurança da informação.</p>
+
+<p>Durante minha trajetória na Equifax, desenvolvi competências como pensamento analítico, atenção a detalhes e a habilidade de atuar de forma colaborativa com diferentes áreas da empresa.</p>
+
+<p>Busco uma oportunidade para aplicar e ampliar meus conhecimentos em tecnologia da informação, com foco especial em desenvolvimento de sistemas. Tenho facilidade de aprendizado, sou comprometida com resultados e acredito que posso contribuir significativamente para o crescimento da equipe e dos projetos.</p>
+
+    </section>
+<br>
+<br>
+
+    <!-- Seção com links para redes -->
+    <section id="Redes">
+      <h2>Linkedin e Curriculo</h2>
+      <div class="project-grid">
+        <article class="project-item">
+          <p>LinkedIn</p>
+          <a class="button" href="https://www.linkedin.com/in/nadjan-santos-florencio-b87453138/" target="_blank">Visitar</a>
+          <p>Currículo</p>
+      <a class="button" href="C:\Users\nda-p\OneDrive\Área de Trabalho\portifolio\Curriculo_Nadjan_Santos_Florencio.pdf" target="_blank">Baixar PDF</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção de contato com informações e link para currículo -->
+<section id="contato">
+  <h2>Contato</h2>
+  <div class="contact-info">
+    <p><ion-icon name="call-outline"></ion-icon> <strong>Telefone:</strong> (11) 960185624</p>
+    <p><ion-icon name="mail-outline"></ion-icon> <strong>Email:</strong> nadjan22@gmail.com</p>
+    <p><ion-icon name="logo-whatsapp"></ion-icon> <strong>WhatsApp:</strong> 
+      <a href="https://wa.me/qr/MZ7VGLOF4LVVE1" target="_blank">Clique aqui para conversar</a>
+    </p>
+  </div>
+</section>
+  </main>
+
+  <!-- Script JavaScript para envio de formulário -->
+  <script src="script.js"></script>
 </body>
 </html>
